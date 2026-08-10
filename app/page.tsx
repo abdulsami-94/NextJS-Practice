@@ -3,7 +3,8 @@ import Link from "next/link";
 export default function Home() {
   return(
     <>
-      <h1>Hi</h1>
+      <h1 className="text-4xl font-bold flex ">This is my Next.JS App</h1>
+      <Link href="/posts">Pages</Link>
     </>
   );
 }
