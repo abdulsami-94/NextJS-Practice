@@ -11,11 +11,12 @@ export default function PostCard({ post }: { post: any }) {
 
   return (
     <li className="border rounded px-2 py-4">
-      {post.id} <br />
-      {post.title} <br />
-      {post.body} <br />
+      <span className="border border-neutral-800 rounded-xl p-5 bg-neutral-900 hover:bg-neutral-800/80 transition-colors flex flex-col gap-3">{post.id}</span> <br />
+      <span className="text-xs font-mono text-neutral-500">#{post.id}</span>
+      <span className="text-lg font-semibold text-neutral-100 line-clamp-2">{post.title}</span> <br />
+      <span className="text-sm text-neutral-400 line-clamp-3">{post.body}</span> <br />
       <button
-        className="border rounded px-2 py-1"
+        className="flex items-center gap-1 text-sm text-neutral-400 hover:text-red-400 transition-colors"
         onClick={() => handleLike(post.id)}
       >
         ❤️ {likes[post.id] ?? 0}
