@@ -10,7 +10,7 @@ interface PostsResponse {
   posts: Post[];
 }
 
-export default async function BlogsPoge() {
+export default async function BlogsPage() {
   const res = await fetch("https://dummyjson.com/posts?limit=10");
   const data: PostsResponse = await res.json();
 
