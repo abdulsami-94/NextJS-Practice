@@ -19,7 +19,7 @@ export default function NavBar() {
             About
           </Link>
 
-          <Link href="/contactUs" className="font-bold">
+          <Link href="/contact-us" className="font-bold">
             Contact Us
           </Link>
         </div>
